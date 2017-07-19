@@ -50,7 +50,8 @@ class MenuViewController: UIViewController {
             let destinationViewController = storyboard.instantiateViewController(withIdentifier: "StoryboardViewController") as! StoryboardViewController
             navigationController?.pushViewController(destinationViewController, animated: true)
         case .nsLayoutAnchor:
-            print(item.rawValue)
+            let destinationViewController = NSLayoutAnchorViewController()
+            navigationController?.pushViewController(destinationViewController, animated: true)
         }
     }
 }
